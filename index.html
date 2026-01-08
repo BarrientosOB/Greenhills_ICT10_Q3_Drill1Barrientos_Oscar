@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    
+    <title>Student Grade Calculator</title>
+
+<style>
+    div {
+        font-family:Broadway;
+        font-size: 16px;
+        margin: 20px;
+        background-color: lightgray;
+        color: dimgray;
+    }
+
+    form {
+        font-family:Broadway;
+        font-size: 16px;
+        margin: 20px;
+        background-color: lightgray;
+        color: dimgray;
+    }
+
+    input {
+        font-family:Broadway;
+        font-size: 16px;
+        margin: 5px;
+        background-color: white;
+        color: dimgray;
+    }
+
+    input[type=button] {
+        font-family:Broadway;
+        font-size: 16px;
+        margin: 5px;
+        background-color: dimgray;
+        color: white;
+        cursor: pointer;
+    }
+
+    input[type=button]:hover {
+        background-color: gray;
+    }
+    
+    h1 {
+        font-family:Broadway;
+        font-size: 24px;
+        margin: 20px;
+        color: dimgray;
+    }
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    
+    <h1>Student Grade Calculator</h1>
+    <div>
+        <form>
+            <label for="score">Enter your information</label><br>
+            <input type="text" id="input1" placeholder="First Name"><br>
+            <input type="text" id="input2" placeholder="Last Name"><br><br>
+       
+            <label for="score">Enter your score</label><br>
+            <input type="number" id="eng" placeholder="English"><br>
+            <input type="number" id="mth" placeholder="Math"><br>
+            <input type="number" id="sci" placeholder="Science"><br>
+            <input type="number" id="fil" placeholder="Filipino"><br>
+        
+        
+            <input type="button" value="Calculate" py-click="getting_info"><br><br>
+        </form>
+    </div>
+
+    <div id="div1"></div>
+    
+    <py-script src="main.py"></py-script>
+</body>
+</html>
